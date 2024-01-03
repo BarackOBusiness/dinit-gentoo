@@ -1,7 +1,8 @@
 # dinit-chimera
 
 This is the core services suite for [dinit](https://github.com/davmac314/dinit)
-as used by Chimera.
+as used by Chimera.\
+Featuring adapatations for use in gentoo, which are unfinished.
 
 It provides an expansive collection of service files, scripts and helpers to
 aid early boot, more suitable for a practical deployment than the example

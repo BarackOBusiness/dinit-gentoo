@@ -11,7 +11,7 @@ DINIT_NO_CONTAINER=1
 . ./early/scripts/common.sh
 
 case "$1" in
-    start) exec /usr/libexec/udevd --daemon ;;
+    start) exec /lib/systemd/systemd-udevd --daemon ;;
     stop) udevadm control -e || : ;;
     settle) exec udevadm settle ;;
     trigger) exec udevadm trigger --action=add ;;
