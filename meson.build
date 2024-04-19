@@ -1,7 +1,7 @@
 project(
     'dinit-chimera',
     ['c', 'cpp'],
-    version: '0.99.4',
+    version: '0.99.6',
     default_options: [
         'c_std=c99', 'cpp_std=c++17',
         'cpp_eh=none', 'cpp_rtti=false',
@@ -45,6 +45,7 @@ endforeach
 
 scripts = [
     'binfmt.sh',
+    'bless-boot.sh',
     'cgroups.sh',
     'clock.sh',
     'common.sh',
@@ -88,6 +89,7 @@ endforeach
 services = [
     'boot',
     'early-binfmt',
+    'early-bless-boot',
     'early-cgroups',
     'early-console.target',
     'early-cryptdisks',
@@ -108,6 +110,7 @@ services = [
     'early-machine-id',
     'early-mdadm',
     'early-modules-early',
+    'early-modules',
     'early-modules.target',
     'early-net-lo',
     'early-prepare.target',
